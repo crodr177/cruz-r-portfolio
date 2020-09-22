@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.home-container {
+  background-image: url('../assests/bg-home.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  transition: all 1s ease-in;
+  filter: brightness(60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'VT323', monospace;
+}
+
+.brighten {
+  filter:brightness(130%);
+}
+
+.home-container h1 {
+  font-size: 4vw;
+  margin-top: 7vh;
+  width: 70%;
+  color: lightseagreen;
+  text-align: center;
+}
+
+.home-container .see-more {
+  transition: all 1s ease-in;
+  font-size: 1px;
+}
+
+.home-container .glow {
+  font-size: 25px;
+  margin-bottom: 6%;
+  padding: 10px;
+  color: lightseagreen;
+  border: 5px solid;
+  text-decoration: none;
+  animation: glow 1000ms ease-out infinite alternate;
+}
+
+.home-container .see-more:hover {
+  color: white;
+}
+
+@keyframes glow {
+  0% {
+  border-color: rgb(51, 146, 153);
+  box-shadow: 0 0 5px rgba(0, 208, 255, 0.2), inset 0 0 5px rgba(0, 208, 255, 0.1), 0 2px 0 #000;
+  }	
+  100% {
+  border-color: rgb(102, 227, 255);
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.6), inset 0 0 10px rgba(0, 238, 255, 0.4), 0 2px 0 #000;
+  }
+}
