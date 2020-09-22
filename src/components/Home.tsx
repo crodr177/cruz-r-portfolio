@@ -34,17 +34,17 @@ class Home extends React.Component<{}, HomeState> {
     }), 7500)
   }
 
-typeWriter = () => {
-  const txt = "Hello, I'm Cruz Rodriguez. I'm a front-end web developer.";
-  const speed = 70;
-  if (this.state.index < txt.length) {
-    this.setState({
-      intro: this.state.intro + txt.charAt(this.state.index),
-      index: this.state.index + 1,
-    })
-    setTimeout(this.typeWriter, speed);
+  typeWriter = () => {
+    const txt = "Hello, I'm Cruz Rodriguez. I'm a front-end web developer.";
+    const speed = 70;
+    if (this.state.index < txt.length) {
+      this.setState({
+        intro: this.state.intro + txt.charAt(this.state.index),
+        index: this.state.index + 1,
+      })
+      setTimeout(this.typeWriter, speed);
+    }
   }
-}
 
   render(){
     return(
