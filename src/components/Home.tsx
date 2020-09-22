@@ -2,16 +2,16 @@ import React from 'react';
 
 import '../styles/Home.css';
 
-interface State {
+interface HomeState {
   containerClass: string;
   buttonClass: string;
   intro: string;
   index: number;
 }
 
-class Home extends React.Component<{}, State> {
+class Home extends React.Component<{}, HomeState> {
 
-  state: State = {
+  state: HomeState = {
     containerClass: '',
     buttonClass: '',
     intro: '',
