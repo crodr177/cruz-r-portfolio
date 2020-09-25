@@ -57,7 +57,7 @@
   color: rgb(216, 84, 54);
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 850px) {
   .navbar-container {
     background-color: black;
   }
