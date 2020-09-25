@@ -116,9 +116,13 @@
   }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 820px) {
   .container {
     height: 2400px;
+  }
+
+  .skills-container {
+    margin-top: 120px;
   }
 
   .about-me {
@@ -143,7 +147,6 @@
   }
 
   .skill.animation {
-    width: 100%;
     width: 300px;
     height: 250px;
     margin-bottom: 30px;
