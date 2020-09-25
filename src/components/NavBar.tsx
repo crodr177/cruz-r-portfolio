@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import '../styles/NavBar.css';
 const pdfFile = require('../assets/pdfs/cruz-r-resume.pdf');
 
 interface NavBarState {
+  responsiveClass: string;
   stickyClass: string;
   navbarOffset: number;
 }
@@ -11,6 +15,7 @@ interface NavBarState {
 class NavBar extends React.Component<{}, NavBarState> {
 
   state: NavBarState = {
+    responsiveClass: '',
     stickyClass: '',
     navbarOffset: 0,
   }
@@ -37,15 +42,28 @@ class NavBar extends React.Component<{}, NavBarState> {
     }
   }
 
+  addResponsiveClass = () => {
+    if(this.state.responsiveClass !== 'responsive'){
+      this.setState({
+        responsiveClass: 'responsive',
+      })
+    } else {
+      this.setState({
+        responsiveClass: '',
+      })
+    }
+  }
+
   render(){
     return(
-      <div id="navbar" className={`navbar-container ${this.state.stickyClass}`}>
+      <div id="navbar" className={`navbar-container ${this.state.stickyClass} ${this.state.responsiveClass}`}>
+        <button onClick={this.addResponsiveClass}><FontAwesomeIcon icon={faBars} /></button>
         <ul className="navbar-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href={pdfFile} className="resume">Resume</a></li>
+          <li><a href="#home" onClick={this.addResponsiveClass}>Home</a></li>
+          <li><a href="#about" onClick={this.addResponsiveClass}>About</a></li>
+          <li><a href="#projects" onClick={this.addResponsiveClass}>Projects</a></li>
+          <li><a href="#contact" onClick={this.addResponsiveClass}>Contact</a></li>
+          <li><a href={pdfFile} className="resume" onClick={this.addResponsiveClass}>Resume</a></li>
         </ul>
       </div>
     );
