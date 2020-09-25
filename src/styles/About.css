@@ -117,6 +117,10 @@
 }
 
 @media only screen and (max-width : 768px) {
+  .container {
+    height: 2400px;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
@@ -133,10 +137,15 @@
   .about-me p {
     text-align: center;
   }
-}
 
-@media only screen and (max-width : 768px) {
-  .container {
-    height: 2400px;
+  .about-skills {
+    width: 100%;
+  }
+
+  .skill.animation {
+    width: 100%;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
   }
 }
