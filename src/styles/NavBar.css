@@ -65,7 +65,7 @@
     display: block;
     position: fixed;
     margin-top: 20px;
-    right: 20px;
+    right: 10px;
     color: white;
     background-color: transparent;
     border: none;
@@ -95,7 +95,7 @@
   }
 
   .responsive .navbar-menu li {
-    margin: 40px 20px;
+    margin: 40px 0px;
     font-size: 60px;
     font-weight: bold;
   }
