@@ -54,7 +54,7 @@ class About extends React.Component<{}, AboutState> {
       <div id="about" className="container">
         <h1 id="about-header" className="header">{this.state.header}</h1>
         <div className="about-me">
-          <img src={profileImage}/>
+          <img alt="profile" src={profileImage}/>
           <div>
           <p>Hello, I'm <span>Cruz Rodriguez</span>, a software engineer based in Las Vegas, NV. </p>
           <p>The techincal skills I have learned foucs on the front-end as well as the back-end of web development. I have worked with modern day technologies like: React and TypeScript. As well as older technologies like jQuery. Some of the back-end technologies I have worked with include: MySQL, DynamoDB and Node. While my learning and experience have focused on all aspects of web developement, my emphasis is on the front-end side. I enjoy creating great user experiences with every project I work on. I believe if you can think it, you can develop it.</p>

@@ -78,7 +78,6 @@ class AboutSkills extends React.Component<{}, AboutSkillsState> {
             <div className={`icons ${this.state.animationClass}`}>
               <FontAwesomeIcon icon={faVial} />
             </div>
-            <h2></h2>
           </div>
           <div className={`skill ${this.state.animationClass}`}>
             <h1>Responsive Apps</h1>
@@ -86,7 +85,6 @@ class AboutSkills extends React.Component<{}, AboutSkillsState> {
               <FontAwesomeIcon icon={faLaptop} />
               <FontAwesomeIcon icon={faMobileAlt} />
             </div>
-            <h2></h2>
           </div>
         </div>
       </div>

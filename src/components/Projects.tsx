@@ -60,13 +60,13 @@ class Projects extends React.Component<{}, ProjectsState> {
         <div className={`project-container ${this.state.animationClass}`}>
           <div className="column-container">
             <div className="project">
-              <a href="https://github.com/crodr177/cruz-r-portfolio" target="_blank" rel="noopener noreferrer"><img src={portfolioImg}/></a>
+              <a href="https://github.com/crodr177/cruz-r-portfolio" target="_blank" rel="noopener noreferrer"><img alt="portfolio" src={portfolioImg}/></a>
               <p>Portfolio<br/>
                 <span className="sub-par">Built using React and Responsive development</span>
               </p>
             </div>
             <div className="project">
-              <a href="https://github.com/crodr177/comic" target="_blank" rel="noopener noreferrer"><img src={comicsImg}/></a>
+              <a href="https://github.com/crodr177/comic" target="_blank" rel="noopener noreferrer"><img alt="comics" src={comicsImg}/></a>
               <p>Comic Weekly Releases<br/>
                 <span className="sub-par">Built using Angular 10 and Ngrx</span>
               </p>
@@ -74,13 +74,13 @@ class Projects extends React.Component<{}, ProjectsState> {
           </div>
           <div className="column-container">
             <div className="project">
-            <a href="https://github.com/crodr177/Login-Form" target="_blank" rel="noopener noreferrer"><img src={loginImg}/></a>
+            <a href="https://github.com/crodr177/Login-Form" target="_blank" rel="noopener noreferrer"><img alt="login-page" src={loginImg}/></a>
               <p>Login<br/>
                 <span className="sub-par">Built using PHP and MySQL</span>
               </p>
             </div>
             <div className="project">
-            <a href="https://github.com/TylerBrow/GuardianApp-CapstoneProject" target="_blank" rel="noopener noreferrer"><img src={guardianImg}/></a>
+            <a href="https://github.com/TylerBrow/GuardianApp-CapstoneProject" target="_blank" rel="noopener noreferrer"><img alt="guardian-project" src={guardianImg}/></a>
               <p>Guardian<br/>
                 <span className="sub-par">Built using React, Redux, MySQL, Express (Node Framework) and React Native for mobile app part</span>
               </p>
