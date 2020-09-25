@@ -1,0 +1,54 @@
+.navbar-container {
+  top: -70px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: top 1s ease-in-out;
+  overflow-y: scroll;
+}
+
+.sticky {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  margin: 0;
+  background-color: black;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  margin: none;
+  transition: color .2s;
+  font-size: 20px;
+}
+
+.navbar-menu .resume {
+  border: 2px solid lightseagreen;
+  color: lightseagreen;
+  background: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar-menu .resume:hover {
+  background-color: rgba(32, 178, 171, 0.214);
+}
+
+.navbar-menu a:hover {
+  color: rgb(216, 84, 54);
+}

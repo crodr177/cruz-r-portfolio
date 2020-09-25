@@ -1,0 +1,88 @@
+.about-me {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+.about-me img {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  margin-right: 80px;
+}
+
+.about-me p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-me span {
+  color: lightseagreen;
+}
+
+.sub-header {
+  font-family: 'VT323', monospace;
+  height: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+.skills-container {
+  width: 85%;
+}
+
+.about-skills {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill {
+  color: black
+}
+
+.skill.animation {
+  width: 220px;
+  height: 220px;
+  border: 5px solid lightseagreen;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
+.skill .bottom-buffer {
+  margin-bottom: 60px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+  width: 100%;
+  color: black;
+}
+
+.icons.animation {
+  color: rgb(216, 84, 54);
+}
+
+.skill-description {
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+@keyframes slide {
+  0%   {left:-2000px; top:0px;}
+  100%  {left:0px; top:0px;}
+}

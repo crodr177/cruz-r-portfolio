@@ -1,0 +1,37 @@
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 165px;
+  width: 100%;
+}
+
+.contact-details {
+  color: lightseagreen;
+  font-size: 30px;
+  text-align: center;
+  width: 45%;
+}
+
+.icons-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 65px;
+  width: 40%;
+}
+
+.icons-contact a {
+  color: lightseagreen;
+}
+
+.icons-contact a:visited {
+  color: lightseagreen;
+}
+
+.icons-contact a:hover {
+  color: white;
+  cursor: pointer;
+}

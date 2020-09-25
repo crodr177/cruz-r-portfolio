@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 .home-container {
-  background-image: url('../assests/bg-home.jpeg');
+  background-image: url('../assets/bg-home.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +15,7 @@
 }
 
 .brighten {
-  filter:brightness(130%);
+  filter: brightness(130%);
 }
 
 .home-container h1 {
@@ -43,7 +41,11 @@
   animation: glow 1000ms ease-out infinite alternate;
 }
 
-.home-container .see-more:hover {
+.home-container .see-more:visited {
+  color: lightseagreen;
+}
+
+.home-container .see-more:visited:hover, .home-container .see-more:hover {
   color: white;
 }
 
