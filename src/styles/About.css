@@ -121,6 +121,10 @@
     height: 2200px;
   }
 
+  .skills-container {
+    margin-top: 100px;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
