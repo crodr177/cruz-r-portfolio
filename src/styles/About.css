@@ -118,11 +118,7 @@
 
 @media only screen and (max-width : 850px) {
   .container {
-    height: 2600px;
-  }
-
-  .skills-container {
-    margin-top: 200px;
+    height: 2200px;
   }
 
   .about-me {
