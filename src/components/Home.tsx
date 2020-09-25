@@ -31,11 +31,11 @@ class Home extends React.Component<{}, HomeState> {
     setTimeout(() =>
     this.setState({
       buttonClass: 'glow',
-    }), 7500)
+    }), 7000)
   }
 
   typeWriter = () => {
-    const txt = "Hello, I'm Cruz Rodriguez. I'm a front-end web developer.";
+    const txt = "Hello, I'm Cruz Rodriguez. I am a software engineer.";
     const speed = 70;
     if (this.state.index < txt.length) {
       this.setState({
@@ -48,9 +48,9 @@ class Home extends React.Component<{}, HomeState> {
 
   render(){
     return(
-      <div className={`home-container ${this.state.containerClass}`}>
+      <div id="home" className={`home-container ${this.state.containerClass}`}>
       <h1>{this.state.intro}</h1>
-      <a className={`see-more ${this.state.buttonClass}`} href="#navbar">See More!</a>
+      <a className={`see-more ${this.state.buttonClass}`} href="#about">See More!</a>
     </div>
     );
   }
