@@ -19,9 +19,9 @@
 }
 
 .home-container h1 {
-  font-size: 4vw;
+  font-size: 60px;
   margin-top: 7vh;
-  width: 70%;
+  width: 1050px;
   color: lightseagreen;
   text-align: center;
 }
@@ -57,5 +57,19 @@
   100% {
   border-color: rgb(102, 227, 255);
   box-shadow: 0 0 20px rgba(0, 238, 255, 0.6), inset 0 0 10px rgba(0, 238, 255, 0.4), 0 2px 0 #000;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+  .home-container h1 {
+    font-size: 47px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .home-container h1 {
+    font-size: 45px;
+    width: 70%;
   }
 }

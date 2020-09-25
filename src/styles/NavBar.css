@@ -6,6 +6,10 @@
   overflow-y: scroll;
 }
 
+.navbar-container button {
+  display: none;
+}
+
 .sticky {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -51,4 +55,48 @@
 
 .navbar-menu a:hover {
   color: rgb(216, 84, 54);
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar-container {
+    background-color: black;
+  }
+  .navbar-container button {
+    display: block;
+    position: fixed;
+    margin-top: 20px;
+    right: 40px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 45px;
+    cursor: pointer;
+  }
+
+  .navbar-container button:focus {
+    outline: none;
+  }
+
+  .navbar-container button:hover {
+    outline: none;
+    color: lightseagreen;
+  }
+
+  .navbar-menu {
+    display: none;
+    height: 0;
+  }
+
+  .responsive .navbar-menu {
+    float: none;
+    display: block;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .responsive .navbar-menu li {
+    margin: 40px 10px;
+    font-size: 60px;
+    font-weight: bold;
+  }
 }

@@ -77,3 +77,27 @@
   0%   {left:-2000px; top:0px;}
   100%  {left:0px; top:0px;}
 }
+
+@media only screen and (max-width : 1000px) {
+  .projects-container {
+    height: 2000px
+  }
+
+  .project-container {
+    width: 800px;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .projects-container {
+    height: 2000px;
+  }
+
+  .project-container {
+    width: 450px;
+  }
+}
