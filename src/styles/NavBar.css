@@ -60,6 +60,7 @@
 @media only screen and (max-width : 850px) {
   .navbar-container {
     background-color: black;
+    width: 100%;
   }
   .navbar-container button {
     display: block;
