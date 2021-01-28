@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import '../styles/NavBar.css';
-const pdfFile = require('../assets/pdfs/Cruz_Rodriguez_Software_Engineer.pdf');
+const pdfFile = require('../assets/pdfs/Cruz_Rodriguez_Software_Eng.pdf').default;
 
 interface NavBarState {
   responsiveClass: string;
