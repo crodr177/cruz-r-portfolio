@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAws, faCss3Alt, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faChalkboardUser, faDatabase, faGears, faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faChalkboardUser, faDatabase, faGears } from "@fortawesome/free-solid-svg-icons";
 
 interface AboutSkillsState {
   headerOffset: number;
