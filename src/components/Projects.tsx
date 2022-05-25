@@ -42,7 +42,7 @@ class Projects extends React.Component<{}, ProjectsState> {
   }
   
   typeWriter = () => {
-    const txt = "Projects";
+    const txt = "Frontend Projects";
     const speed = 200;
     if (this.state.index < txt.length) {
       this.setState({

@@ -35,7 +35,7 @@ class Home extends React.Component<{}, HomeState> {
   }
 
   typeWriter = () => {
-    const txt = "Hello, I'm Cruz Rodriguez. I am a software engineer.";
+    const txt = "Hello, I'm Cruz Rodriguez. I am a software engineer in test.";
     const speed = 70;
     if (this.state.index < txt.length) {
       this.setState({

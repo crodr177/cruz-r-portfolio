@@ -100,4 +100,8 @@
   .project-container {
     width: 400px;
   }
+
+  #projects-header {
+    font-size: 60px;
+  }
 }

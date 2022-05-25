@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAws, faCss3Alt, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase, faLaptop, faMobileAlt, faVial } from "@fortawesome/free-solid-svg-icons";
+import { faChalkboardUser, faDatabase, faGears, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 interface AboutSkillsState {
   headerOffset: number;
@@ -57,7 +57,7 @@ class AboutSkills extends React.Component<{}, AboutSkillsState> {
         <h2 id="subheader" className="sub-header">{this.state.header}</h2>
         <div className="about-skills">
           <div className={`skill ${this.state.animationClass}`}>
-            <h1 className="bottom-buffer">Front-End</h1>
+            <h1 className="bottom-buffer">Frontend</h1>
             <div className={`icons ${this.state.animationClass}`}>
               <FontAwesomeIcon icon={faHtml5} />
               <FontAwesomeIcon icon={faCss3Alt} />
@@ -65,7 +65,7 @@ class AboutSkills extends React.Component<{}, AboutSkillsState> {
             </div>
           </div>
           <div className={`skill ${this.state.animationClass}`}>
-            <h1 className="bottom-buffer">Back-End</h1>
+            <h1 className="bottom-buffer">Backend</h1>
             <div className={`icons ${this.state.animationClass}`}>
               <FontAwesomeIcon icon={faDatabase} />
               <FontAwesomeIcon icon={faAws} />
@@ -73,17 +73,16 @@ class AboutSkills extends React.Component<{}, AboutSkillsState> {
             </div>
           </div>
           <div className={`skill ${this.state.animationClass}`}>
-            <h1>Testing</h1>
-            <h3>Unit and E2E</h3>
+            <h1>Automation</h1>
+            <h3>(UI and API)</h3>
             <div className={`icons ${this.state.animationClass}`}>
-              <FontAwesomeIcon icon={faVial} />
+              <FontAwesomeIcon icon={faGears} />
             </div>
           </div>
           <div className={`skill ${this.state.animationClass}`}>
-            <h1>Responsive Apps</h1>
+            <h1 className="bottom-buffer">Management</h1>
             <div className={`icons ${this.state.animationClass}`}>
-              <FontAwesomeIcon icon={faLaptop} />
-              <FontAwesomeIcon icon={faMobileAlt} />
+              <FontAwesomeIcon icon={faChalkboardUser} />
             </div>
           </div>
         </div>

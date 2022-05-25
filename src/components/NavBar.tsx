@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import '../styles/NavBar.css';
-const pdfFile = require('../assets/pdfs/Cruz_Rodriguez_Software_Eng.pdf').default;
+const pdfFile = require('../assets/pdfs/Cruz_Rodriguez_QA_Engineer_2022.pdf').default;
 
 interface NavBarState {
   responsiveClass: string;
@@ -57,7 +57,7 @@ class NavBar extends React.Component<{}, NavBarState> {
   render(){
     return(
       <div id="navbar" className={`navbar-container ${this.state.stickyClass} ${this.state.responsiveClass}`}>
-        <button onClick={this.addResponsiveClass}><FontAwesomeIcon icon={faBars} /></button>
+        <button onClick={this.addResponsiveClass}><FontAwesomeIcon icon={faBars}/></button>
         <ul className="navbar-menu">
           <li><a href="#home" onClick={this.addResponsiveClass}>Home</a></li>
           <li><a href="#about" onClick={this.addResponsiveClass}>About</a></li>

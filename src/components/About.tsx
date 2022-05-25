@@ -56,8 +56,8 @@ class About extends React.Component<{}, AboutState> {
         <div className="about-me">
           <img alt="profile" src={profileImage}/>
           <div>
-          <p>Hello, I'm <span>Cruz Rodriguez</span>, a software engineer based in Las Vegas, NV. </p>
-          <p>The technical skills I have learned focus on the front-end as well as the back-end of web development. I have worked with modern day technologies like: React and TypeScript. As well as older technologies like jQuery. Some of the back-end technologies I have worked with include: MySQL, DynamoDB and Node. While my learning and experience have focused on all aspects of web development, my emphasis is on the front-end side. I enjoy creating great user experiences with every project I work on. I believe if you can think it, you can develop it.</p>
+          <p>Hello, I'm <span>Cruz Rodriguez</span>, a software engineer in test based in Las Vegas, NV. </p>
+          <p>The technical skills I have worked with focus on the front end as well as the back end of web development testing. I have worked with modern day technologies like: React and TypeScript, as well as older technologies like: jQuery. Some of the back end technologies I have worked with include: MySQL, DynamoDB and Node.js. I have also implemented unit, end-to-end, and automation tests to both back end and front end. I enjoy improving user experiences and love to break everything handed to me for testing.</p>
           </div>
         </div>
         <AboutSkills />
